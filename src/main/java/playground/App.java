@@ -7,12 +7,11 @@ public class App {
 
    public static void main(String[] args){
 
-    IntroToStrings stringsClass = new IntroToStrings();
     
     //this variable has a static non access modifier
-    System.out.println(IntroToStrings.attendance);
-
-    // String welcome = stringsClass.helloString;
+   //  System.out.println(IntroToStrings.attendance);
+  
+   //   String welcome = stringsClass.helloString;
     // String hello = "Hello Everyone!";
     // String hello2 = new String("hello everyone!");
 
@@ -30,11 +29,26 @@ public class App {
     // .equalsIgnoreCase() - this method allows us to compare strings
     //regardless of their casing.
      
-    int favNum = HelloWorld.favoriteNumber();
-    System.out.println(favNum);
+   //  int favNum = HelloWorld.favoriteNumber();
+   //  System.out.println(favNum);
     //because the favoriteNumber method has the static non access modifier in its signature
     //we are able to call the method on the class itself.
-    System.out.println(HelloWorld.favoriteNumber());
+   //  System.out.println(HelloWorld.favoriteNumber());
+
+   IntroToStrings stringsClass = new IntroToStrings();
+   IntroToStrings stringClass2 = new IntroToStrings("Day 3 Was Great!");
+
+   System.out.println(stringsClass.helloString);
+   System.out.println(stringClass2.helloString);
+
+   System.out.println(stringsClass.attendance);
+   System.out.println(stringClass2.attendance);
+
+   stringClass2.attendance += 7;
+
+   System.out.println(stringsClass.attendance);
+
+
 
 
 
